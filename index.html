@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!---menu of add to cart-->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary p-4" data-toggle="modal" data-target="#cart">Add to Cart(<span class="total-count"></span>)</button>
+                <button class="clear-cart btn btn-danger p-4">Clear Cart</button>
+            </div>
+          
+        </div>
+    </nav>
+     <!---menu of add to cart end-->
+
+    <!---product details-->
+    <section class="cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="img/banana.jpg" alt="Card image cap">
+                        <div class="card-block">
+                          <h4 class="card-title">Banana</h4>
+                          <p class="card-text h5">Price: $1.22</p>
+                          <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-success">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="img/lemon.jpg" alt="Card image cap">
+                        <div class="card-block">
+                          <h4 class="card-title">Lemon</h4>
+                          <p class="card-text h5">Price: $1.40</p>
+                          <a href="#" data-name="Lemon" data-price="1.40" class="add-to-cart btn btn-success">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="img/orange.jpg" alt="Card image cap">
+                        <div class="card-block">
+                          <h4 class="card-title">Orange</h4>
+                          <p class="card-text h5">Price: $1.42</p>
+                          <a href="#" data-name="Orange" data-price="1.42" class="add-to-cart btn btn-success">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---product details end-->
+
+    <!---Modal--->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+                
+              </table>
+              <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ordernow">Order now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!---Modal details--->
+
+ <!---order succesfully modal-->
+            <div class="modal fade" id="ordernow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content bg-success">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="text-center">Your Order Successfully</h3>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+<!---order succesfully modal-->
+
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

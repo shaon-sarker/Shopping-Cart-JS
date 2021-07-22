@@ -1,0 +1,12 @@
+body {
+    padding-top: 80px;
+    background-color: cadetblue;
+}  
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+.cart{
+    margin-top: 10rem;
+}
